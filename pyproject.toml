@@ -19,7 +19,33 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "black>=23.0.0", "ruff>=0.1.0", "mypy>=1.0.0"]
+dask = [
+    "dask[complete]>=2024.1.0",
+    "distributed>=2024.1.0",
+]
+stac = [
+    "pystac>=1.9.0",
+    "pystac-client>=0.7.0",
+    "stackstac>=0.5.0",
+]
+zarr = [
+    "zarr>=2.16.0",
+    "fsspec>=2024.1.0",
+]
+cloud = [
+    "satdatakit[stac,zarr]",
+    "s3fs>=2024.1.0",
+]
+full = [
+    "satdatakit[dask,cloud]",
+]
+
+dev = ["pytest>=7.0.0", 
+     "pytest-cov>=4.0.0", 
+     "black>=23.0.0", 
+     "ruff>=0.1.0", 
+     "mypy>=1.0.0"
+]
 
 [project.urls]
 Homepage = "https://github.com/rafaelcanete/satdatakit"
