@@ -1,20 +1,20 @@
-&lt;p align="center"&gt;
-  &lt;img src="satdatakit_banner.png" alt="SatDataKit Banner" width="100%"&gt;
-&lt;/p&gt;
+<p align="center">
+  <img src="satdatakit_banner.png" alt="SatDataKit Banner" width="100%">
+</p>
 
-&lt;h1 align="center"&gt;SatDataKit&lt;/h1&gt;
+<h1 align="center">SatDataKit</h1>
 
-&lt;p align="center"&gt;
-  &lt;strong&gt;Unified satellite data analysis toolkit — one API for all Earth Observation formats.&lt;/strong&gt;
-&lt;/p&gt;
+<p align="center">
+  <strong>Unified satellite data analysis toolkit — one API for all Earth Observation formats.</strong>
+</p>
 
-&lt;p align="center"&gt;
-  &lt;a href="https://github.com/raicanvag/satdatakit/blob/main/LICENSE"&gt;
-    &lt;img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"&gt;
-  &lt;/a&gt;
-  &lt;img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" alt="Python 3.9+"&gt;
-  &lt;img src="https://img.shields.io/badge/EO-GeoTIFF%20%7C%20NetCDF%20%7C%20HDF%20%7C%20SAFE-orange.svg" alt="Formats"&gt;
-&lt;/p&gt;
+<p align="center">
+  <a href="https://github.com/raicanvag/satdatakit/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" alt="Python 3.9+">
+  <img src="https://img.shields.io/badge/EO-GeoTIFF%20%7C%20NetCDF%20%7C%20HDF%20%7C%20SAFE-orange.svg" alt="Formats">
+</p>
 
 ---
 
@@ -56,7 +56,8 @@ result = (
     .to_geotiff("output.tif")
 )
 
-**Installation**
+---
+## Installation
 
 # Docker (recommended)
 docker-compose up --build satdatakit
