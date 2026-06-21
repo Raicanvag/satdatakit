@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satdatakit"
+version = "0.1.0"
+description = "Unified satellite data analysis toolkit"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Rafael Cañete Vazquez", email = "rafael@satdatakit.dev"}]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23.0", "xarray>=2023.1.0", "rioxarray>=0.14.0",
+    "rasterio>=1.3.0", "netCDF4>=1.6.0", "h5py>=3.7.0",
+    "pandas>=1.5.0", "pyproj>=3.4.0", "shapely>=2.0.0",
+    "geopandas>=0.12.0", "pillow>=9.0.0",
+    "python-dateutil>=2.8.0", "typing-extensions>=4.0.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "black>=23.0.0", "ruff>=0.1.0", "mypy>=1.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/rafaelcanete/satdatakit"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.9"
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
