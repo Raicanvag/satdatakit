@@ -91,7 +91,8 @@ pip install satdatakit[full]
 | **Cloud** | `pip install satdatakit[cloud]` | STAC + Zarr + S3 access                  |
 | **Full**  | `pip install satdatakit[full]`  | All extensions (servers, production)     |
 
-**Dask Example**
+
+### Dask Example
 
 from satdatakit.extensions.dask_ext import enable_dask, read_dask
 
@@ -104,7 +105,7 @@ ds = read_dask(["file1.tif", "file2.tif"], chunks={"x": 1024})
 ds = ds.compute()
 
 
-**Features**
+## Features
 
 Unified API: One read() for GeoTIFF, NetCDF, HDF, SAFE
 Spectral Indices: NDVI, NDWI, EVI, SAVI, and more
@@ -112,7 +113,7 @@ Pipeline API: Fluent, chainable operations
 Time Series: Stack multiple scenes automatically
 
 
-**License**
+## License
 
 MIT License — see LICENSE for details.
 Author: Rafael Cañete Vazquez
